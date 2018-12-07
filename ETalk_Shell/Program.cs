@@ -1,4 +1,5 @@
 ﻿using System;
+using ETalk_Shell.core;
 using ETalk_Shell.shell.user;
 
 namespace ETalk_Shell
@@ -18,11 +19,12 @@ namespace ETalk_Shell
                 {
                     Help();
                 }
-                User user=new User();
+
+                Ctx ctx = Ctx.Init();
                 switch (args[0])
                 {
                         case "login":
-                            user.Login(args[2],args[4]);
+                            ctx.User.Login(args[2],args[4]);
                             break;
                         default:
                             Help();
@@ -31,6 +33,7 @@ namespace ETalk_Shell
             }
             catch (Exception e)
             {
+                Console.Write(e.StackTrace);
                 Console.WriteLine(e.Message);
                 Help();
             }
@@ -40,14 +43,15 @@ namespace ETalk_Shell
         {
             Console.Write(@"
 Usage: et [COMMAND]... [OPTION]...
-
+ setting
+    -l        --langage          set language
  login 
-    -u     --username     login username
-    -p     --password     login password
+    -u        --username         login username
+    -p        --password         login password
  group 
-    -l  --List          get group list
-
- exit                 logout Et network
+    -l        --List             get group list
+ refresh                         reload config
+ exit                            logout Et network
   
  -v --Version  output version information and exit
  
