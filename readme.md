@@ -3,3 +3,7 @@
 
 ###  future
 - 广播登录
+
+### usage
+et --help
+et login -u guess -p -d
