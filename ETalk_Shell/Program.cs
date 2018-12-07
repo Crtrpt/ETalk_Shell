@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using ETalk_Shell.shell.user;
 
 namespace ETalk_Shell
 {
@@ -18,11 +18,11 @@ namespace ETalk_Shell
                 {
                     Help();
                 }
-
+                User user=new User();
                 switch (args[0])
                 {
                         case "login":
-                            Console.WriteLine("TODO");
+                            user.Login(args[2],args[4]);
                             break;
                         default:
                             Help();
@@ -48,7 +48,9 @@ Usage: et [COMMAND]... [OPTION]...
     -l  --List          get group list
 
  exit                 logout Et network
-    -v --Version  output version information and exit
+  
+ -v --Version  output version information and exit
+ 
 
 Examples:
 et login 
