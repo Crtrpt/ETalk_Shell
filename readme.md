@@ -4,6 +4,13 @@
 ###  future
 - 广播登录
 
+### install
+- windows10(build...)
+- centos(build...)
+- ubuntu(build...)
+- maxos(build...)
+
+
 ### usage
 et --help
 et login -u guess -p -d

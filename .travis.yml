@@ -1,2 +1,6 @@
 language: csharp
 solution: ETalk_Shell.sln
+mono: none
+dotnet: 1.1.5
+script:
+  - ./build.sh
