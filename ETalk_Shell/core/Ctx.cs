@@ -21,7 +21,8 @@ namespace ETalk_Shell.core
             ctx.InitUser();
             return ctx;
         }
-        
+
+
         void InitCombined()
         {
             InitLanguage();
@@ -39,7 +40,7 @@ namespace ETalk_Shell.core
         void InitDefaultSetting()
         {
             config= FileUtil.LoadIni("config/main.ini");
-            Console.WriteLine(config["version"].ToString());
+            Console.WriteLine(config["main"]["version"].ToString());
             Console.WriteLine("init default setting");
         }
         /**

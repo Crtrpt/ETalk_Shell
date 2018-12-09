@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Administrator\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell.csproj",
+    "projectUniqueName": "/Users/jzx/RiderProjects/ETalk_Shell/ETalk_Shell/ETalk_Shell.csproj",
     "projectName": "ETalk_Shell",
-    "projectPath": "C:\\Users\\Administrator\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell.csproj",
-    "outputPath": "C:\\Users\\Administrator\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell\\obj\\",
+    "projectPath": "/Users/jzx/RiderProjects/ETalk_Shell/ETalk_Shell/ETalk_Shell.csproj",
+    "outputPath": "/Users/jzx/RiderProjects/ETalk_Shell/ETalk_Shell/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"

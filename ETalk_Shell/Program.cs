@@ -1,6 +1,5 @@
 ﻿using System;
 using ETalk_Shell.core;
-using ETalk_Shell.shell.user;
 
 namespace ETalk_Shell
 {
@@ -15,21 +14,26 @@ namespace ETalk_Shell
         {
             try
             {
-                if (args[0] == "-h" || args[0] == "--help" || args[0] == "h")
+                
+                Ctx ctx = Ctx.Init();
+                ctx.User.Test();
+                if (args.Length==0 || args[0] == "-h" || args[0] == "--help" || args[0] == "h")
                 {
                     Help();
                 }
 
-                Ctx ctx = Ctx.Init();
-                switch (args[0])
+
+                
+/*                switch (args[0])
                 {
                         case "login":
                             ctx.User.Login(args[2],args[4]);
                             break;
                         default:
+                            
                             Help();
                             break;
-                }
+                }*/
             }
             catch (Exception e)
             {
