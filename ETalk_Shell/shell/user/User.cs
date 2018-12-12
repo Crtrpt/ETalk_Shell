@@ -19,7 +19,7 @@ namespace ETalk_Shell.shell.user
             
             
             Request request = new Request(Method.GET);
-            request.URI = new Uri("coap://255.255.255.255:5683/hello-world");
+            request.URI = new Uri("coap://255.255.255.:5683/hello-world");
             request.Send();
             
             
