@@ -2,6 +2,7 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using CoAP;
 
 namespace ETalk_Shell.shell.user
 {
@@ -15,6 +16,13 @@ namespace ETalk_Shell.shell.user
 
         public void Test()
         {
+            
+            
+            Request request = new Request(Method.GET);
+            request.URI = new Uri("coap://255.255.255.255:5683/hello-world");
+            request.Send();
+            
+            
             IPEndPoint ipEndPoint=new IPEndPoint(IPAddress.Broadcast,18080);
             var client = new UdpClient();
             client.EnableBroadcast = true;

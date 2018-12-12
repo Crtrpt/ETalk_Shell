@@ -1,0 +1,1 @@
+C:\Users\Administrator\.nuget\packages\grpc.tools\1.17.0\tools\windows_x64 -I ETalk_Shell/protos --csharp_out Greeter --grpc_out Greeter ../../protos/helloworld.proto --plugin=protoc-gen-grpc=%UserProfile%\.nuget\packages\packages\Grpc.Tools.1.17.0\tools\windows_x86\grpc_csharp_plugin.exe

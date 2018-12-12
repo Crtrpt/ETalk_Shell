@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/jzx/RiderProjects/ETalk_Shell/ETalk_Shell/ETalk_Shell.csproj",
+    "projectUniqueName": "C:\\Users\\Administrator\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell.csproj",
     "projectName": "ETalk_Shell",
-    "projectPath": "/Users/jzx/RiderProjects/ETalk_Shell/ETalk_Shell/ETalk_Shell.csproj",
-    "outputPath": "/Users/jzx/RiderProjects/ETalk_Shell/ETalk_Shell/obj/",
+    "projectPath": "C:\\Users\\Administrator\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell.csproj",
+    "outputPath": "C:\\Users\\Administrator\\ETalk_Shell\\ETalk_Shell\\ETalk_Shell\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
@@ -26,6 +26,14 @@
   "frameworks": {
     "netcoreapp2.2": {
       "dependencies": {
+        "CoAP.NET.Core": {
+          "target": "Package",
+          "version": "[1.1.0, )"
+        },
+        "Grpc": {
+          "target": "Package",
+          "version": "[1.17.0, )"
+        },
         "INIFileParserDotNetCore": {
           "target": "Package",
           "version": "[2.5.2, )"
